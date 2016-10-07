@@ -10,6 +10,7 @@ $texto-blanco: darken($blanco, 10);
 $negro: #000000;
 $azul: #0B2457;
 $azul-claro: lighten($azul, 20);
+$azul-oscuro: darken($azul, 20);
 $verde: #A5B80A;
 
 $opaco: rgba(0, 0, 0, 0.4);

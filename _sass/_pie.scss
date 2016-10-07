@@ -1,0 +1,222 @@
+/* footer */
+footer {
+  font-family: 'Roboto Condensed', sans-serif;
+  h3 {
+    font-family: 'Poiret One', cursive;
+  }
+}
+@media(max-width: 767px) {
+  .footer.three ul li {
+    display: inline-flex;
+  }
+  .footer.three ul li i {
+    float: left;
+      font-size: 18px;
+    color: #fff;
+	line-height: 1.8;
+  padding-top: 5px;
+}
+.footer.three ul li p {
+    list-style-type: none;
+    display: block;
+    color: #908F8F;
+    font-size: 14px;
+    line-height: 33px;
+    font-family: 'Roboto Condensed', sans-serif;
+	float:left;
+	margin-left:0;
+}
+}
+.footer-grids{
+	background: $azul;
+  padding: 40px 0;
+}
+p.footer-gd {
+    //color: #908F8F;
+    color: #908F8F;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+p.footer-gd a {
+	color:#fff;
+}
+.footer{
+	float:left;
+}
+.footer h3{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+p.adam{
+	float:right;
+	color:#6F6E6E !important;
+	font-size:13px !important;
+	margin-top:20px;
+}
+.footer.two {
+  text-align: center;
+  h3 {
+    text-align: left;
+  }
+}
+.footer.one p {
+  color: #828282;
+  line-height: 26px;
+  font-size: 14px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.footer.two ul{
+	margin:0;
+	padding:0;
+}
+.footer.two ul li{
+	list-style-type:none;
+	display:block;
+    line-height: 1.5em;
+	font-size:14px;
+	margin: 18px 0;
+}
+.footer.three ul li {
+    list-style-type: none;
+}
+.footer.two ul li i {
+    font-size: 13px;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+    color: #fff;
+    background: #6E65F1;
+    padding: 9px;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.footer.three ul li i.fa.fa-facebook {
+  //margin-right: 5px;
+  padding-left: 5px;
+  //padding-top: 5px;
+}
+.footer.two ul li i.fa.fa-twitter {
+	background:#3bbef5;
+}
+.footer.two ul li i.fa.fa-google-plus {
+	background:#ea5d4b;
+}
+.footer.two ul li i.fa.fa-dribbble {
+	background:#f7659b;
+}
+.footer.two ul li i.fa.fa-pinterest-p {
+	background:#e23139;
+}
+.footer.two ul li a{
+	color:#908F8F;	
+	display:block;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-decoration:none;
+}
+.footer.three ul li i {
+	float: left;
+    font-size: 18px;
+    color: #fff;
+	line-height: 1.8;
+  padding-top: 5px;
+}
+.footer.three ul li p {
+    list-style-type: none;
+    display: block;
+    color: #908F8F;
+    font-size: 14px;
+    line-height: 33px;
+    font-family: 'Roboto Condensed', sans-serif;
+	float:left;
+	margin-left:15px;
+}
+.footer.three ul li a {
+    list-style-type: none;
+    display: block;
+    color: #908F8F;
+    font-size: 14px;
+    line-height: 33px;
+    font-family: 'Roboto Condensed', sans-serif;
+	float:left;
+	margin-left:15px;
+}
+.footer.three {
+  ul {
+    li {
+      a:hover {
+        color: red;
+      }
+    }
+  }
+}
+.footer.three ul li span {
+    display: block;
+}
+.footer.one {
+    padding-right: 40px;
+}
+.footer.three ul li a {
+    display: block;
+	color:#908F8F;
+	font-family: 'Roboto Condensed', sans-serif;
+	float: left;
+	margin-lefT: 15px;
+	margin-top: 5px;
+}
+i.fa-envelope-o {
+	float:left;
+}
+.copy-right-grids {
+  font-family: 'Poiret One', cursive;
+	padding: 20px 0px;
+  background: $azul;
+  text-align: center;
+}
+.copy-left{
+	float:left;
+}
+.footer-links{
+	float:right;
+}
+.footer-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 0px;
+    border-left: 1px solid #444343;
+    padding: 0 12px;
+}
+.footer-links ul li a {
+	color: #908F8F;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.copy-right ul li a:hover,.footer.three ul li a:hover{
+	//color:#8F44AD;
+	color: $texto-blanco;
+}
+.footer.two ul li:nth-child(1) a:hover {
+	color:#5D82D2;
+}
+.footer.two ul li:nth-child(2) a:hover {
+	color:#3bbef5;
+}
+.footer.two ul li:nth-child(3) a:hover {
+	color:#ea5d4b;
+}
+.footer.two ul li:nth-child(4) a:hover {
+	color:#f7659b;
+}
+.footer.two ul li:nth-child(5) a:hover {
+	color:#e23139;
+}
+/* //footer */
