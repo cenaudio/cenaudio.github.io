@@ -1,0 +1,24 @@
+// Google Fonts
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,700,300|Roboto:400,700,300|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300);
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Tangerine:400,700);
+
+// Colores
+$blanco: #ffffff;
+$texto-blanco: darken($blanco, 10);
+$negro: #000000;
+$azul: #0B2457;
+$azul-claro: lighten($azul, 20);
+$verde: #A5B80A;
+
+$opaco: rgba(0, 0, 0, 0.4);
+
+// Fuentes
+$fuente-base: "Roboto", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$fuente-titulos: "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$color-fuente-base: $negro;
+$size-fuente-base: 1em;
+$altura-linea-base: 1.8;
+$altura-linea-titulos: 1.8;
+$espaciado-base: $altura-linea-base * 1em;
+$espaciado-small: $espaciado-base / 2;
