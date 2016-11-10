@@ -28,8 +28,8 @@ logo-xs: "/assets/logos/logo-xs.jpg"
 markdown: kramdown
 theme: minima
 
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+#gems:
+  #- jekyll-feed
+#exclude:
+  #- Gemfile
+  #- Gemfile.lock
