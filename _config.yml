@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Centro audiológico y terapéutico del Huila
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.cenaudio.com.co" # the base hostname & protocol for your site
-pagina-facebook: "HorMinka"
+pagina-facebook: "cenaudio"
 
 logo: "/assets/logos/logo.jpg"
 logo-xs: "/assets/logos/logo-xs.jpg"
