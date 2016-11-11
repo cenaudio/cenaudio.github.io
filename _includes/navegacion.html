@@ -23,13 +23,15 @@
           <ul class="nav navbar-center navbar-nav">
             {% assign sorted_pages = site.pages | sort:"orden" %}
             {% for my_page in sorted_pages %}
-              {% if my_page.title %}
-                {% if my_page.url == page.url %}
-                  <li class="current_page"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
-                {% else %}
-                  <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+              {% unless my_page.exclude %}
+                {% if my_page.title %}
+                  {% if my_page.url == page.url %}
+                    <li class="current_page"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+                  {% else %}
+                    <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+                  {% endif %}
                 {% endif %}
-              {% endif %}
+              {% endunless %}
             {% endfor %}
             <li class="visible-xs">
               <p class="eslogan">oír mejor es vivir mejor</p>

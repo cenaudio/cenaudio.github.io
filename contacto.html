@@ -4,4 +4,35 @@ title: "Contacto"
 orden: 4
 ---
 
-<h1>Contacto</h1>
+<section class="container-fluid contacto">
+  <div class="row header">
+    <h1>¡Visítanos!</h1>
+  </div>
+  <div class="row mapa">
+    <div class="col-md-12" id="map">
+    </div>
+  </div>
+  <form class="row contact-form" action="https://formspree.io/contacto@cenaudio.com.co" method="POST">
+    <div class="col-md-12">
+      <h3>Escríbenos</h3>
+    </div>
+    <div class="col-md-4">
+      <input type="text" name="nombre" value="Nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}" required="">
+    </div>
+    <div class="col-md-4">
+      <input type="email" name="email" value="Correo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Correo';}" required="">
+    </div>
+    <div class="col-md-4">
+      <input type="text" name="telefono" value="Teléfono" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Teléfono';}" required="">
+    </div>
+    <div class="col-md-12">
+      <textarea type="text" name="mensaje" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje...';}" required="">Mensaje...</textarea>
+    </div>
+    <div class="col-md-12">
+      <input type="submit" value="Enviar" >
+    </div>
+    <input type="hidden" name="_subject" value="[contacto sitio web]" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="hidden" name="_next" value="{{ 'gracias/' | prepend: site.baseurl }}" />
+  </form>
+</section>

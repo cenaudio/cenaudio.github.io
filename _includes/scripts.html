@@ -3,7 +3,10 @@
 <script src='{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}'></script>
 <script src='{{ "/js/swiper.jquery.min.js" | prepend: site.baseurl }}'></script>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyq0buvgtvq-64YigVhE8w_kWMIDdERIk&callback=initMap" async defer></script>
+
 {% include slider-js.html %}
+{% include mapa.js.html %}
 
 <!-- Google Analytics -->
 {% if jekyll.environment == 'production' and site.google_analytics %}
