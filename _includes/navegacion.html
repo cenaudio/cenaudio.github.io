@@ -21,18 +21,17 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-center navbar-nav">
-            {% assign sorted_pages = site.pages | sort:"orden" %}
-            {% for my_page in sorted_pages %}
-              {% unless my_page.exclude %}
-                {% if my_page.title %}
-                  {% if my_page.url == page.url %}
-                    <li class="current_page"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
-                  {% else %}
-                    <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
-                  {% endif %}
-                {% endif %}
-              {% endunless %}
-            {% endfor %}
+            <li {% if page.title == 'Inicio' %}class="current_page"{% endif %}><a href="{{ '/' | prepend: site.baseurl }}">inicio</a>
+            <li {% if page.title == 'DRA. ALINA MARGARITA DIAZ STERLING' %}class="current_page"{% endif %}><a href="{{ 'nosotros' | prepend: site.baseurl }}">DRA. ALINA MARGARITA DIAZ STERLING</a>
+              <li class="dropdown {% if page.servicio %}current_page{% endif %}">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">servicios <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ 'examenes' | prepend: site.baseurl }}">Exámenes auditivos</a></li>
+                <li><a href="{{ 'audifonos' | prepend: site.baseurl }}">PRUEBA, SELECCIÓN Y ADAPTACIÓN DE AUDÍFONOS</a></li>
+                <li><a href="{{ 'proteccion' | prepend: site.baseurl }}">PROTECCIÓN AUDITIVA</a></li>
+              </ul>
+            </li>
+            <li {% if page.title == 'Contacto' %}class="current_page"{% endif %}><a href="{{ 'contacto' | prepend: site.baseurl }}">contacto</a>
             <li class="visible-xs">
               <p class="eslogan">oír mejor es vivir mejor</p>
             </li>

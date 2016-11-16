@@ -13,12 +13,31 @@
     .texto-perfil {
       padding: 60px;
       p {
+        text-align: justify;
         font-family: $fuente-base;
-        font-size: 1.3 * $size-fuente-base;
+        font-size: 1.2 * $size-fuente-base;
       }
     }
     .imagen-perfil {
       padding: 0;
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .nosotros {
+    .contenido {
+      .texto-perfil {
+        padding: 25px;
+        p {
+          text-align: justify;
+          font-family: $fuente-base;
+          font-size: 1.1 * $size-fuente-base;
+        }
+        h1 {
+          font-size: 2 * $size-fuente-base;
+        }
+      }
     }
   }
 }
