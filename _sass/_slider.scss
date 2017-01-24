@@ -1,6 +1,6 @@
 .swiper-container {
   width: 100%;
-  height: 500px;
+  height: 473px;
   margin-left: auto;
   margin-right: auto;
   background: $blanco;
@@ -31,6 +31,9 @@
     font-size: 40px;
     width: 80%;
     font-weight: 600;
+    &.starkey-slide {
+      color: $azul-aviso;
+    }
   }
 }
 //@media(max-width: 981px) {

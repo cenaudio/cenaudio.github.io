@@ -10,7 +10,7 @@ header {
   .logo {
     a {
       margin: 0 auto;
-      max-width: 66px;
+      max-width: 600px;
       display: block;
     }
     p.nombre {
@@ -97,6 +97,7 @@ header {
 }
 @media (max-width: 767px) {
   header {
+    background-color: $azul-aviso;
     .navbar-center {
       padding-top: 0;
     }
@@ -115,9 +116,10 @@ header {
   .navbar {
     .navbar-toggle {
       position: absolute;
-      right: 10px;
-      top: 10px;
+      right: 0px !important;
+      top: 0px !important;
       display: inline-block;
+      background-color: transparent;
       &:hover, &:focus {
         background-color: $verde;
       }
@@ -128,13 +130,17 @@ header {
   }
   .navbar-header {
     display: inline-flex;
-    padding-left: 10px;
-    padding-right: 10px;
+    //padding-left: 10px;
+    //padding-right: 10px;
   }
   .navbar-wrapper {
     height: 80px;
     .navbar-brand {
+      margin-top: -35px;
       padding-top: 0;
+      img {
+        max-width: 230px;
+      }
     }
     span.nombre {
       text-transform: uppercase;
@@ -146,6 +152,7 @@ header {
 		padding: 0 !important;
     width: 100%;
 		background: $blanco;
+    margin-top:50px;
 	}
   .navbar-nav > li > a {
     margin: 15px 0px;
